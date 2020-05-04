@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.top{
+    height: 200px;
+    background: #EBEEEA;
+}
+.bottom{
+    height: calc(100vh - 200px);
+    background: #35BC8E;
+    position: relative;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #cccccc;
+    margin: 0 100px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+ul li a{
+    text-decoration: none;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4d4d4d;
+    padding: 10px;
+
+    transition: all 0.5s ease;
+}
+ul li a:hover{
+    color: #EBEEEA;
+    background: #1d1d1d;
+}
+ul li:nth-child(3) a{
+    font-family: 'Anton', sans-serif;
+    text-transform: lowercase;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.bottom h1{
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%,0px);
+
+    font-size: 150px;
+    color: #384847;
+    width: 100%;
+    text-align: center;
+    transition: all .3s ease;
+}
+.bottom img{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%,0px);
+    width: 380px;
+    filter: grayscale(100%);
+}
+.bottom p{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+
+    width: 270px;
+    font-size: 30px;
+    text-align: right;
+    color: #384847;
+}
